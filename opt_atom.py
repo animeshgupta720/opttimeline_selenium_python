@@ -97,7 +97,7 @@ def send_simple_message():
     smtp_server = "smtp.gmail.com"
     port = 587  # For starttls
     sender_email = "animeshgupta720@gmail.com"
-    password = "Yellowstone90!"
+    password = ""
     receiver_email = "animeshgupta720@gmail.com"
     # Create a secure SSL context
     context = ssl.create_default_context()
