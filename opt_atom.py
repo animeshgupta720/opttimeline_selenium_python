@@ -9,6 +9,9 @@ import time
 import re
 import smtplib, ssl
 
+path = input("Enter the path where chromedriver is installed:")
+my_id = input("Enter your OPT application number:")
+
 count=0
 count2=0
 for i in range (3200,3215):
@@ -17,7 +20,9 @@ for i in range (3200,3215):
  chrome_options.add_argument('--headless')
  chrome_options.add_argument('--no-sandbox')
  chrome_options.add_argument('--disable-dev-shm-usage')
- driver = webdriver.Chrome('/home/animesh/Downloads/chromedriver',chrome_options=chrome_options)
+ #path = input("Enter the path where chromedrier is installed:")
+ driver = webdriver.Chrome(path,options=chrome_options)
+ #'/home/animesh/Downloads/chromedriver'
  driver.get("https://egov.uscis.gov/casestatus/landing.do")
 
 
@@ -46,9 +51,15 @@ for i in range (3200,3215):
  value = r.findall(mystatus)
 
  if 'Approved' in value  or 'Delivered' in value or 'Mailed' in value:
+    if r_id==my_id:
+     send_simple_message(my_id)
+     count = count+1
+     print(r_id,"Approved ")
+     time.sleep(2)
     count = count+1
     print(r_id,"Approved ")
     time.sleep(2)
+     
  else:
     print(r_id,"Received")
     count2=count2+1
@@ -60,7 +71,7 @@ time.sleep(3)
 
 
 
-def send_simple_message():
+def send_simple_message(my_id):
 
 
     smtp_server = "smtp.gmail.com"
@@ -79,7 +90,7 @@ def send_simple_message():
         server.ehlo() # Can be omitted
         server.login(sender_email, password)
         # TODO: Send email here
-        message="Congratulations! Yor case status is approved."
+        message="Congratulations! Yor case status" + my_id + "is approved."
         server.sendmail(sender_email, receiver_email, message)
 
     except Exception as e:
