@@ -51,7 +51,7 @@ Open the script and go to line #51 and #64 and make the following changes:
 
 For example, if your application id is this  - YSC2090163312; then make the following modifications to the opt_range.py file:
 
--  Replace "for i in range(3200,3215)" to "for i in range(3300,3215)".
+-  Replace "for i in range(3200,3215)" to "for i in range(3300,3315)".
 
 -  Replace YSC209015 to YSC209016.
 
