@@ -10,6 +10,7 @@ This project makes use of selenium module to perform webscraping on the USCIS we
 - smtplib - pip3 install smtplib
 
 2. Clone the project using  - *git clone https://github.com/animeshgupta720/opttimeline_selenium_python.git*
+3. Install and test chromedriver using the following link - https://chromedriver.storage.googleapis.com/index.html?path=2.42/
 
 Now you can run the script for two things - 1. to get just your own application status emailed 2. to get your own as well as a
 few other application status' printed on CLI.
