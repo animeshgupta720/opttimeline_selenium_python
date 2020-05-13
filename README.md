@@ -13,8 +13,11 @@ This project makes use of selenium module to perform webscraping on the USCIS we
 
 3. Install and test chromedriver using the following link - https://chromedriver.storage.googleapis.com/index.html?path=2.42/
 ```
-Now you can run the script for two things - 1. to get just your own application status emailed 2. to get your own as well as a
-few other application status' printed on CLI.
+Now you can run the script for two things - 
+
+1. to get just your own application status emailed 
+
+2. to get your own as well as a few other application status' printed on CLI.
 
 ### Running the script to get only your application status:
 
