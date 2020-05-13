@@ -9,7 +9,7 @@ This project makes use of selenium module to perform webscraping on the USCIS we
 - selenium - pip3 install selenium
 - smtplib - pip3 install smtplib
 
-2. Clone the project using  - *git clone https://github.com/animeshgupta720/opttimeline_selenium_python.git*
+2. Clone the project using  - git clone https://github.com/animeshgupta720/opttimeline_selenium_python.git
 
 3. Install and test chromedriver using the following link - https://chromedriver.storage.googleapis.com/index.html?path=2.42/
 ```
