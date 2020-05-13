@@ -4,7 +4,7 @@ This project makes use of selenium module to perform webscraping on the USCIS we
 
 ### Prerequisites:
 ```
-1. Install the following Python modules:
+1. Install the following Python module:
 
 - selenium - pip3 install selenium
 
