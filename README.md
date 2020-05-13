@@ -46,7 +46,7 @@ The above CRON job will execute every 30th minute of every hour in a day.
 
 ### Running the script to get your application status along with a few others sent close to your receipt date:
 
-Open the script and go to line #51 and #64 and make the following changes:
+Open the *opt_range.py* script and go to line #51 and #64 and make the following changes:
 
 #51 - Replace the range based on the range for which you want the data.
 #64 - Replace "YSC209015" with the first nine letters in your application id.
