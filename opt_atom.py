@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import os
+import os
 import time
 import re
 import smtplib, ssl
